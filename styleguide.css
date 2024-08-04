@@ -1015,11 +1015,12 @@
   }
   
   .projectimg {
-    margin-left: 15px;
-    height: 150;
-    width: 300;
-    padding-left: 0;
-  }
+    margin-left: 15px; /* Espaçamento à esquerda */
+    height: auto; /* Mantém a proporção original da imagem */
+    width: 100%; /* Ajusta a largura da imagem para se ajustar ao contêiner pai */
+    max-width: 300px; /* Define um limite máximo para a largura */
+    padding-left: 0; /* Remove o padding à esquerda */
+}
   
   .text-block-2 {
     margin-left: 20px;
