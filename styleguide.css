@@ -14,6 +14,7 @@
   
   .w-layout-blockcontainer {
     max-width: 940px;
+    height: 1200;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -21,7 +22,7 @@
   
   @media screen and (max-width: 991px) {
     .w-layout-blockcontainer {
-        max-width: 100%; /* Ajuste conforme necessário */
+        max-width: 200px; /* Ajuste conforme necessário */
     }
   }
 
@@ -200,7 +201,7 @@
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 220px;
+    padding-bottom: 20px;
   }
   
   .styleguide-content-wrap {
@@ -890,7 +891,16 @@
     display: block;
     position: static;
   }
-  
+
+  .textproject {
+    height: 200px;
+    width: 100%; /* Preenche o restante do espaço disponível */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+    resize: vertical; /* Permite que o usuário ajuste a altura do campo */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 1px solid #ccc; /* Adiciona uma borda sutil */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+  }
   .text-block {
     aspect-ratio: auto;
     text-align: center;
@@ -915,7 +925,7 @@
   .container-2 {
     background-color: #e9e9e9;
     max-width: 1140px;
-    max-height: 2000px;
+    max-height: 1200px;
     margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -934,6 +944,7 @@
     grid-template-columns: 1fr;
     place-items: start center;
     max-width: 600px;
+    height: 784px;
     padding-bottom: 0;
   }
   
@@ -945,8 +956,8 @@
   }
   
   .projectctext {
-    max-width: 450px;
-    max-height: 250px;
+    max-width: 500px;
+    max-height: 200px;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 230px;
@@ -1016,8 +1027,8 @@
   
   .projectimg {
     margin-left: 15px; /* Espaçamento à esquerda */
-    height: auto; /* Mantém a proporção original da imagem */
-    width: 100%; /* Ajusta a largura da imagem para se ajustar ao contêiner pai */
+    height: 191px; /* Mantém a proporção original da imagem */
+    width: 500px; /* Ajusta a largura da imagem para se ajustar ao contêiner pai */
     max-width: 300px; /* Define um limite máximo para a largura */
     padding-left: 0; /* Remove o padding à esquerda */
   }
