@@ -1050,10 +1050,10 @@
     object-fit: fill;
     background-color: #474040;
     max-width: 1300px;
-    margin-top: -100px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 2px;
     padding-bottom: 24px;
     position: static;
   }
@@ -1072,7 +1072,7 @@
     margin: 75px auto 0;
     padding: 20px 40px 40px;
     display: block;
-    position: static;
+    position: ab;
     left: auto;
     right: auto;
   }
@@ -1508,8 +1508,14 @@
     }
   
     .navigation {
+      position: fixed; /* Faz com que a navegação fique fixada na tela */
+      top: 0; /* Posiciona a navegação no topo da tela */
+      left: 0; /* Alinha a navegação à esquerda da tela */
+      width: 100%; /* Faz com que a navegação ocupe toda a largura da tela */
       padding-left: 20px;
       padding-right: 20px;
+      z-index: 9999; /* Garante que a navegação fique acima de outros elementos */
+      background-color: white; /* Adiciona uma cor de fundo para garantir que o texto fique legível */
     }
   
     .menu-button, .menu-button.w--open {
