@@ -1939,3 +1939,31 @@
   .section-4 {
       margin-bottom: 0; /* Remove a margem inferior da última seção se não for necessário */
   }
+/* Estilos para Desktop (telas maiores que 991px) */
+@media screen and (min-width: 992px) {
+    .navigation.w-nav {
+        height: 120px;
+    }
+    .navigation-items {
+        /* Centraliza verticalmente os itens na barra de navegação mais alta */
+        align-items: center;
+    }
+    /* Força a exibição do botão de menu no desktop, ativando o modo "colapsado" */
+    .w-nav-button {
+        display: block;
+    }
+}
+
+/* Estilos para Mobile (telas menores que 991px) */
+@media screen and (max-width: 991px) {
+    .w-nav-menu {
+        width: 30%;
+        height: 200px;
+        /* Organiza os links do menu horizontalmente */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

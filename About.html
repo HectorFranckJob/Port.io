@@ -15,6 +15,10 @@
                 /* Centraliza verticalmente os itens na barra de navegação mais alta */
                 align-items: center;
             }
+            /* Força a exibição do botão de menu no desktop, ativando o modo "colapsado" */
+            .w-nav-button {
+                display: block;
+            }
         }
 
         /* Estilos para Mobile (telas menores que 991px) */
@@ -39,11 +43,11 @@
             <a href="/" aria-current="page" class="logo-link w-nav-brand w--current"><img src="images/LogoW.png" width="104" alt="" class="logo-image"></a>
             <div class="navigation-wrap">
                     <nav role="navigation" class="navigation-items w-nav-menu">
-                        <a href="index.html" aria-current="page" class="navigation-item w-nav-link w--current">Home</a>
-                        <a href="About.html" class="navigation-item w-nav-link">About</a>
+                        <a href="index.html" class="navigation-item w-nav-link">Home</a>
+                        <a href="About.html" aria-current="page" class="navigation-item w-nav-link w--current">About</a>
                         <a href="Track.html" class="navigation-item w-nav-link">Track</a>
                     </nav>
-            <div class="menu-button w-nav-button"><img src="images/Menu-Cardapio/MenuC4.png" width="22" alt="" class="menu-icon"></div>
+            <div class="menu-button w-nav-button"><img src="images/Menu-Cardapio/MenuC4.png" width="22" alt="Ícone do Menu" class="menu-icon"></div>
         </div>
         </div>
   </div>
