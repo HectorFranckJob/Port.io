@@ -1189,6 +1189,8 @@
   
     .menu-icon {
       display: block;
+      align-items: center;
+      padding: 15px 30px;
     }
   
     .navigation-item {

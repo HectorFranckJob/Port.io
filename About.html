@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port</title>
     <link rel="stylesheet" type="text/css" href="css\styleguide.css">
+    <style>
+        /* Estilos para Desktop (telas maiores que 991px) */
+        @media screen and (min-width: 992px) {
+            .navigation.w-nav {
+                height: 120px;
+            }
+            .navigation-items {
+                /* Centraliza verticalmente os itens na barra de navegação mais alta */
+                align-items: center;
+            }
+        }
+
+        /* Estilos para Mobile (telas menores que 991px) */
+        @media screen and (max-width: 991px) {
+            .w-nav-menu {
+                width: 30% !important;
+                height: 200px !important;
+                /* Organiza os links do menu horizontalmente */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
 <body class="body">
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
         <div class="navigation-items">
             <a href="/" aria-current="page" class="logo-link w-nav-brand w--current"><img src="images/LogoW.png" width="104" alt="" class="logo-image"></a>
             <div class="navigation-wrap">
